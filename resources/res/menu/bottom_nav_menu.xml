@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/home_icon" android:id="@+id/home_bottom_nav" android:title="Home"/>
+    <item android:icon="@drawable/category_icon" android:id="@+id/category_bottom_nav" android:title="Category"/>
+    <item android:icon="@drawable/add_book" android:id="@+id/sell_bottom_nav" android:title="Sell"/>
+    <item android:icon="@drawable/selling_list_icon" android:id="@+id/selling_bottom_nav" android:title="Selling"/>
+    <item android:icon="@drawable/chats_icon" android:id="@+id/chat_bottom_nav" android:title="Chats"/>
+</menu>

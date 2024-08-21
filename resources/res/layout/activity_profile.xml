@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/profile_activity_id" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageButton android:id="@+id/back_button_profile" android:padding="5dp" android:layout_width="48dp" android:layout_height="48dp" android:layout_margin="5dp" android:src="@drawable/back_button_24dp"/>
+        <Button android:textStyle="bold" android:textColor="#fff8e1" android:id="@+id/profile_edit_button" android:background="#536dfe" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="Edit Profile" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <p011de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profile_image" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="140dp" android:layout_height="150dp" android:layout_marginTop="30dp" android:src="@drawable/account_circle" android:layout_below="@+id/profile_edit_button" android:layout_centerHorizontal="true" app:civ_border_color="#ff000000" app:civ_border_width="1dp"/>
+        <TextView android:textSize="18sp" android:id="@+id/profile_name_username_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_below="@+id/profile_image" android:layout_centerHorizontal="true" android:textIsSelectable="true" style="@style/TextAppearance.MaterialComponents.Body1"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/profile_linear_layout_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/profile_name_username_tag">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/profile_name_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Name     :"/>
+            <TextView android:textSize="25sp" android:textStyle="italic" android:id="@+id/profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="" style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/profile_linear_layout_bio" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/profile_linear_layout_name">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/profile_bio_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Bio          :"/>
+            <TextView android:textSize="18sp" android:id="@+id/profile_bio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="" android:hint="Write about yourself." style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/profile_linear_layout_email" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/profile_linear_layout_bio">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/profile_email_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Email      :"/>
+            <TextView android:textSize="18sp" android:textStyle="italic" android:id="@+id/profile_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="" style="@style/TextAppearance.AppCompat.Body1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/profile_linear_layout_phone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/profile_linear_layout_email">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/profile_phone_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Phone    :"/>
+            <TextView android:textSize="25sp" android:textStyle="italic" android:id="@+id/profile_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text=""/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/profile_linear_layout_country" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_below="@+id/profile_linear_layout_phone">
+            <TextView android:textSize="20sp" android:textStyle="bold" android:id="@+id/profile_country_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="Country :"/>
+            <TextView android:textSize="25sp" android:textStyle="italic" android:id="@+id/profile_country" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="India"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

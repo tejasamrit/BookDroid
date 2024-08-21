@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/locationFetchImageIcon" android:layout_width="wrap_content" android:layout_height="400dp" android:layout_marginTop="70dp" android:src="@drawable/gettinglocation" android:foregroundGravity="center" android:contentDescription="Fetching GPS location"/>
+    <TextView android:textSize="32sp" android:textStyle="normal|bold|italic" android:gravity="center" android:id="@+id/textFetchingLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Fetching Location..." android:layout_below="@+id/locationFetchImageIcon"/>
+    <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:id="@+id/textPlzTurnOnGPS" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Please turn on GPS." android:layout_below="@+id/textFetchingLocation"/>
+</RelativeLayout>

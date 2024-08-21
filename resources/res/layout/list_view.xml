@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/list_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:id="@+id/card_view" android:background="@color/cardview_light_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_marginRight="5dp" android:layout_marginBottom="3dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/list_view_bookImage" android:paddingTop="5dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="3dp" android:src="@drawable/used_books" android:scaleType="centerCrop" android:layout_weight="4.2"/>
+            <RelativeLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="180dp" android:layout_weight="6">
+                <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="#0091ea" android:id="@+id/list_view_book_Name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:text="Book Name" style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"/>
+                <TextView android:textSize="16sp" android:id="@+id/list_view_book_Description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_below="@+id/list_view_book_Name" style="@style/TextAppearance.MaterialComponents.Body1"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/firstlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_below="@+id/list_view_book_Description">
+                    <TextView android:textSize="17sp" android:id="@+id/list_view_book_SellingPriceTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:text="Selling at: " style="@style/TextAppearance.MaterialComponents.Body1"/>
+                    <TextView android:textSize="19sp" android:id="@+id/list_view_book_SellingPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" style="@style/TextAppearance.MaterialComponents.Body2"/>
+                </LinearLayout>
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#e65100" android:gravity="right" android:layout_gravity="right" android:id="@+id/list_distance" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_below="@+id/firstlayout" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

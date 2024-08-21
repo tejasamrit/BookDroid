@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="book_category">
+        <item>Other</item>
+        <item>Education</item>
+        <item>Computer Science</item>
+        <item>Science/Maths</item>
+        <item>Medical</item>
+        <item>Literature</item>
+        <item>History</item>
+        <item>Health/Fitness</item>
+        <item>Business/Finance</item>
+        <item>Art/Music</item>
+        <item>Biographies</item>
+    </array>
+</resources>

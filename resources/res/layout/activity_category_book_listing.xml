@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinatorLayoutCategoryBookListing" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/customToolbarRelativeLayout" layout="@layout/custom_toolbar_other_noimage"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/pullToRefreshBookListing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/coordinatorLayoutDashboard" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerViewBookListing" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <ImageView android:id="@+id/noBookFoundImageBookListing" android:layout_width="300dp" android:layout_height="300dp" android:layout_marginTop="90dp" android:src="@drawable/nobookfoundillustration" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#d50000" android:gravity="left" android:id="@+id/noBookFoundMsg1BookListing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:layout_marginTop="10dp" android:text="No one is selling used book under this category in your city." android:layout_below="@+id/noBookFoundImageBookListing"/>
+    <TextView android:textSize="20sp" android:textStyle="normal|bold|italic" android:textColor="@color/teal_700" android:gravity="left" android:id="@+id/noBookFoundMsg2BookListing" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:layout_marginTop="20dp" android:text="Be the first to sell used book in your city under this category.\10Go add your books which falls in this category." android:layout_below="@+id/noBookFoundMsg1BookListing"/>
+</RelativeLayout>
